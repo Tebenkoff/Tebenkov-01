@@ -29,10 +29,13 @@ int main()
   
   for(int i=0; i<days; i++)
   {
-    int v = pressure[i];
-    if(v < p_norm) cnt_below++;
-    else if (v > p_norm) cnt_above++;
-    else cnt_exact++;
+    if (i+1 != delden)
+    {
+      int v = pressure[i];
+      if(v < p_norm) cnt_below++;
+      else if (v > p_norm) cnt_above++;
+      else cnt_exact++;
+    }
   }
   
   printf("below: %d\n", cnt_below);
