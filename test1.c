@@ -12,8 +12,9 @@ int main()
 {
   for(int i = 0; i<days; i++)
   pressure[i] = p_min + rand() % (p_max - p_min + 1);
+  printf("day\tpressure\n");
   for(int i=0; i<days; i++)
-    printf("%d\t%d", i+1, pressure[i])
+    printf("%d\t%d\n", i+1, pressure[i]);
     
   int cnt_below = 0;
   int cnt_above = 0;
