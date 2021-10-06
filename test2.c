@@ -11,7 +11,7 @@ int pressure[days]; //31 den v mesyatse
 int main()
 {
   int delden; // den, kotoriy nuzhno udalit
-  scanf("%d", delden);
+  scanf("%d", &delden);
   
   for(int i = 0; i<days; i++)
     pressure[i] = p_min + rand() % (p_max - p_min + 1);
@@ -20,7 +20,7 @@ int main()
   
   for(int i=0; i<days; i++)
   {
-    if (i != delden) printf("%d\t%d\n", i+1, pressure[i]);
+    if (i+1 != delden) printf("%d\t%d\n", i+1, pressure[i]);
   }
   
   int cnt_below = 0;
