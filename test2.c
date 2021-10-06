@@ -11,6 +11,7 @@ int pressure[days]; //31 den v mesyatse
 int main()
 {
   int delden; // den, kotoriy nuzhno udalit
+  printf("delete day: "); // vvod dnya, kotoriy nuzhno udalit
   scanf("%d", &delden);
   
   for(int i = 0; i<days; i++)
