@@ -30,5 +30,13 @@ int main()
     printf("%s\t%s\t%d\t%d\n", row[i].drug_name , row[i].indications, row[i].exp_years, row[i].mfg_year);
   }
   
+  FILE *out = fopen("ex16-out.txt", "w+");
+  for (int i=0; i<n; i++)
+  {
+    fprintf(out, "%s\t%s\t%d\t%d\n", row[i].drug_name , row[i].indications, row[i].exp_years, row[i].mfg_year);
+  }
+  
+  fclose(out);
+  
   return 0;
 }
