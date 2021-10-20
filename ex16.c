@@ -8,12 +8,13 @@ struct record
   int mfg_year;            // God proizvodstva
 };
 
-#define n 3
-
-struct record row[n];
-
 int main()
 {
+  int n;                // Kol-vo strok
+  printf("Enter the number of rows:");
+  scanf("%d", &n);
+    
+  struct record row[n];
   for (int i=0; i<n; i++)
   {
     scanf("%s %s %d %d", row[i].drug_name , row[i].indications, &row[i].exp_years, &row[i].mfg_year);
