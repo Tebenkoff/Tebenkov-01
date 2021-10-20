@@ -35,14 +35,11 @@ int main()
   {
     fprintf(out, "%s\t%s\t%d\t%d\n", row[i].drug_name , row[i].indications, row[i].exp_years, row[i].mfg_year);
   }
-  
   fclose(out);
   
   FILE *outbin = fopen("ex16-out_bin.txt", "wb+");
-  
   fwrite(row, sizeof(row)*n, 1, outbin);
-  
   fclose(outbin);
-
+  
   return 0;
 }
