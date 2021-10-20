@@ -30,14 +30,14 @@ int main()
     printf("%s\t%s\t%d\t%d\n", row[i].drug_name , row[i].indications, row[i].exp_years, row[i].mfg_year);
   }
   
-  FILE *out = fopen("ex16-out.txt", "w+");
+  FILE *out = fopen("extask16-out.txt", "w+");
   for (int i=0; i<n; i++)
   {
     fprintf(out, "%s\t%s\t%d\t%d\n", row[i].drug_name , row[i].indications, row[i].exp_years, row[i].mfg_year);
   }
   fclose(out);
   
-  FILE *outbin = fopen("ex16-out_bin.txt", "wb+");
+  FILE *outbin = fopen("extask16-out_bin.txt", "wb+");
   fwrite(row, sizeof(row)*n, 1, outbin);
   fclose(outbin);
   
