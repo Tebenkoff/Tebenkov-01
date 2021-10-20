@@ -11,7 +11,7 @@ struct record
 int main()
 {
   int n;                // Kol-vo strok
-  printf("Enter the number of rows:");
+  printf("Enter the number of rows: ");
   scanf("%d", &n);
     
   struct record row[n];
