@@ -38,5 +38,11 @@ int main()
   
   fclose(out);
   
+  FILE *outbin = fopen("ex16-out_bin.txt", "wb+");
+  
+  fwrite(row, sizeof(row)*n, 1, outbin);
+  
+  fclose(outbin);
+
   return 0;
 }
